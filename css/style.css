@@ -38,6 +38,7 @@ header div {
 
 header .menu {
     display: flex;
+    margin-top: -6px;
 }
 
 ul {
