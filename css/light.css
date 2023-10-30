@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F0FF;
+}
+
+main {
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+header h1 {
+    background: linear-gradient(#FF52AF, #9F53FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .menu {
+    display: flex;
+}
+
+ul {
+    display: none;
+}
+
+.title {
+    color: #220953;
+    font-size: 44px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    max-width: 300px;
+    position: relative;
+}
+
+.title::before {
+    content: url(../assets/home-star.svg);
+    position: absolute;
+    bottom: -5px;
+    left: -20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+section .inline {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+section .colored {
+    background-image: linear-gradient(#FF52AF, #9F53FF);
+    color: white;
+    padding: 5px 10px;
+    transform: rotate(10deg);
+    border-radius: 8px;
+}
+
+section .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+section div p {
+    color: #220953;
+    text-align: center;
+}
+
+section .hero button {
+    padding: 20px 36px;
+    background-image: linear-gradient(#FF52AF, #9F53FF);
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+section .hero button::after {
+    content: "";
+    padding: 5px;
+    background-image: linear-gradient(#FF52AF, #9F53FF);
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: -17px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: #220953;
+}
+
+.option span {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.options {
+    display: flex;
+    gap: 40px;
+}
+
+section img {
+    width: 100%;
+}
+path{
+    transition: 1s all;
+}
+path:hover{
+    fill: #9F53FF;
+    cursor: pointer;
+}
+@media only screen and (min-width:900px) {
+    main {
+        max-width: 950px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header div {
+        gap: 50px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+    }
+
+    li {
+        color: #220953;
+        transition: 1s all;
+
+    }
+
+    li:hover {
+        background: linear-gradient(#FF52AF, #9F53FF);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    section {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    section .hero {
+        align-items: start;
+    }
+
+    .title {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 70px;
+        max-width: 500px;
+        font-weight: 200;
+    }
+
+    .title::before {
+        left: 350px;
+        top: 110px;
+    }
+
+    .par {
+        text-align: start;
+
+    }
+
+    section .hero button::after {
+        padding: 8px;
+        right: 250px;
+        top:-90px;
+    }
+
+    section img {
+        width: 400px;
+    }
+    .option{
+        font-size: 40px;
+    }
+}
